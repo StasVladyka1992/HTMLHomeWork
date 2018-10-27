@@ -1,0 +1,30 @@
+li{
+    
+color: blue;
+font-size: 14pt;
+}
+#resistors{
+    list-style-type: none;
+}
+#resistors::before{
+    content:"·";
+    padding-right: 20px;
+}
+
+#cond{
+    list-style-type: none;
+    
+}
+#cond::before{
+    content:"§";
+    padding-right: 5px;
+}
+
+#comp{
+    list-style-type: none;
+    
+}
+#comp::before{
+    content:"o";
+    padding-right: 12px;
+}
