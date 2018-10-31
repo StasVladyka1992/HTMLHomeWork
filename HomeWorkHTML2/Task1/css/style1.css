@@ -1,0 +1,33 @@
+table {
+    border-spacing: 10px 20px;
+    width: 100%;
+}
+
+#t1{
+    border-spacing: 10px 0px;
+}
+
+.blockHead{
+background: orange;
+width: 50%;
+height: 80px;
+}
+
+.blockUpperBlock {
+    background: greenyellow;
+    width: 50%;
+    height: 230px;
+}
+
+.blockDownBlock{
+    background-color: blue;
+    width: 33.33%;
+    height: 140px;
+}
+
+
+.footerBlock{
+    width: 25%;
+    height: 90px;
+    background-color: gray;
+}

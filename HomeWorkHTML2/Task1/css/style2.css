@@ -1,0 +1,29 @@
+div{
+    float: left;
+    margin: 10px 5px;
+}
+
+.header{
+    width: 49.1%;
+    background-color: orange;
+    height: 80px;
+}
+
+.upperBlock{
+width: 99%;
+background-color: greenyellow;
+height: 230px;
+}
+
+.downBlock{
+height: 140px;
+background-color: blue;
+width: 32.51%;
+}
+.footerBlock{
+    margin: 10px 5px;
+    float:right;
+    background-color: grey;
+    height: 90px;
+    width: 24.2%;
+}
