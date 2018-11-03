@@ -1,3 +1,9 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 div{
     float: left;
     margin: 10px 5px;
@@ -6,17 +12,17 @@ div{
 .header{
     width: 49.1%;
     background-color: orange;
-    height: 80px;
+    height: 10%;
 }
 
 .upperBlock{
 width: 99%;
 background-color: greenyellow;
-height: 230px;
+height: 45%;
 }
 
 .downBlock{
-height: 140px;
+height: 20%;
 background-color: blue;
 width: 32.51%;
 }
@@ -24,6 +30,6 @@ width: 32.51%;
     margin: 10px 5px;
     float:right;
     background-color: grey;
-    height: 90px;
+    height: 12%;
     width: 24.2%;
 }
