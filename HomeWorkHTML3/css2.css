@@ -1,0 +1,10 @@
+p{
+    border-bottom: 2px solid black;
+    display: block;
+    width: 155px;
+color: green;
+}
+div{
+    background-color: rgb(105, 103, 103);
+    margin: 5px;
+}

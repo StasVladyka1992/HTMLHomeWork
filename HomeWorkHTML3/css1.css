@@ -1,0 +1,15 @@
+@import url("css2.css") tv;
+p{
+    border-bottom: 2px solid black;
+    display: block;
+    width: 155px;
+}
+
+div{
+    background-color: rgb(105, 103, 103);
+    margin: 5px;
+}
+.upperBlock{
+    
+}
+ 
