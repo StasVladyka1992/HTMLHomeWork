@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css3.css">
+    <script src="js3.js"></script>
+</head>
+
+<body>
+    <div class="container1">
+        <form action="" method="get" id="form">
+            <fieldset>
+                <legend>Your details</legend>
+                <label for="name">
+                    Name:
+                    <input type="text" name="name" size="30" maxlength="60">
+                </label>
+                <br>
+                <br>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" size="30" maxlength="80">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Review</legend>
+                <label for="source">
+                    Source:
+                    <select name="source">
+                        <option value="friends">Friends</option>
+                        <option value="newspaper">Newspaper</option>
+                        <option value="internet">Internet</option>
+                        <option value="billboard">Billboard</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                Will you visit us again?
+                <br>
+                <label>
+                    Yes
+                    <!-- нужно указывать одинаковое имя, чтобы можно было выбрать только одно
+                значение-->
+                    <input type="radio" name="rating" value="yes">
+                </label>
+                <label>
+                    No
+                    <input type="radio" name="rating" value="no">
+                </label>
+                <br>
+                <br>
+                <label for="comments">
+                    Comments: </label>
+                <br>
+                <textarea rows="3" cols="33" placeholder="Write smth here" id="comments"></textarea>
+                <br>
+                <input type="submit" id="submitButton" value="Send review">
+            </fieldset>
+        </form>
+    </div>
+    <script>submitButton()</script>
+</body>
+</html>
