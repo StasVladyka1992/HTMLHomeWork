@@ -1,35 +1,35 @@
-body{
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+/*блочная верстка*/
+*{
+margin: 0;
+padding: 0;
 }
-
+body, html{
+    height: 100vh;
+    width: 100%;
+}
 div{
     float: left;
-    margin: 10px 5px;
+    margin: 1vh 1%;
 }
-
 .header{
-    width: 49.1%;
+    width: 48%;
     background-color: orange;
-    height: 10%;
+    height: 10vh;
 }
 
 .upperBlock{
-width: 99%;
+width: 98%;
 background-color: greenyellow;
-height: 45%;
+height: 45vh;
 }
 
 .downBlock{
-height: 20%;
+height: 20vh;
 background-color: blue;
-width: 32.51%;
+width: 31.33%;
 }
 .footerBlock{
-    margin: 10px 5px;
-    float:right;
     background-color: grey;
-    height: 12%;
-    width: 24.2%;
+    height: 12vh;
+    width: 23%;
 }

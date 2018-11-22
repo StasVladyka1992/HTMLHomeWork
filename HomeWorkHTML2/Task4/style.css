@@ -5,48 +5,36 @@ body{
 /*величина относительно окна браузера*/
     height: 100vh;
 }
-
-
+.header, .text, .textContainer, .footer {
+    width: 100%;
+}
 .header{
     position:fixed;
     left: 0;
     top: 0;
-    width: 100%;
     height: 10%;
     background-color: rgba(56, 56, 56, 0.5);
 }
 .header:hover{
     background-color: rgba(117, 118, 119, 0.5);
 }
-.left {
+.left, .right {
     position: relative;
     width: 5%;
     height: 80%;
+    vertical-align: middle;
+}
+.left{
     float: left;
-    vertical-align: middle;
 }
-
 .right{
-    width: 5%;
-    height: 80%;
-    position: relative;
     float: right;
-    vertical-align: middle;
 }
-
-.text{
-    width: 100%;
-}
-
 .textContainer{
     overflow: auto;
     position: fixed;
     top:15%;
-    width: 100%;
-    
-
 }
-
 .mainText{
     width: 32%;
     padding:5px;
@@ -54,26 +42,25 @@ body{
     margin-bottom: 50px;
 }
 
+#leftText, #rightText{
+    border-left: 2px solid goldenrod;
+}
+
 #leftText{
-float: left;
-margin-left: 15%;
-border-left: 2px solid goldenrod;
+    margin-left: 15%;
+    float: left;
 }
 
 #rightText{    
-float: right;
-margin-right: 15%;
-border-right: 2px solid goldenrod;
+    float: right;
+    margin-right: 15%;
 }
-
 .footer{
     clear: left;
-    width: 100%;
     height: 15vh;
     background-color: rgba(243, 147, 3, 0.5);
 
 }
-
 .footer:hover{
     background-color: rgba(243, 147, 3, 1);
 }
