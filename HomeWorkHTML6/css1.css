@@ -1,17 +1,19 @@
-
-  img {
-    width: 400px;
-    height: 400px; 
-    margin-left: 200px;
-    margin-top: 200px;
+img {
+    width: 300px;
+    height: 300px; 
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  @keyframes widening {
+  0%{
+  }
+  100%{
+    width: 450px;
+    height: 450px;
+  }
   }
 
-
-img:hover{
+  img:hover{
 animation-name: widening;
-animation-delay: 1s;
-animation-duration: 3s;
--webkit-transform: scale(1.5);
--ms-transform: scale(1.5);
-transform: scale(1.5);
+animation-duration: 2s;
 }

@@ -1,5 +1,5 @@
-@import url("css2.css") handheld;
-@import url("css3.css") screen;
+@import url("css3.css") screen and (min-width:769px);
+@import url("css2.css") screen and (max-width: 768px);
 
 
 

@@ -1,35 +1,32 @@
 /*блочная верстка*/
-*{
-margin: 0;
-padding: 0;
-}
-body, html{
-    height: 100vh;
-    width: 100%;
+html, body{
+    margin: 0;
+    padding: 0;
 }
 div{
     float: left;
-    margin: 1vh 1%;
 }
 .header{
-    width: 48%;
+    width: 49%;
     background-color: orange;
     height: 10vh;
+    margin: 0.5vh 0.5%;
 }
-
 .upperBlock{
-width: 98%;
+width: 99%;
 background-color: greenyellow;
-height: 45vh;
+height: 40vh;
+margin: 0.5vh 0.5%;
 }
-
 .downBlock{
-height: 20vh;
+height: 25vh;
 background-color: blue;
-width: 31.33%;
+width: 32.33%;
+margin: 1vh 0.5%;
 }
 .footerBlock{
     background-color: grey;
-    height: 12vh;
-    width: 23%;
+    height:20vh;
+    width:24%;
+    margin: 0.5vh 0.5%;
 }

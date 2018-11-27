@@ -1,0 +1,88 @@
+    body, html{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        margin: 0;
+        font-size: 12px;
+    }
+    .container1, .container2 {
+        display: flex;
+    }
+    .container1{
+        height:10vh;
+        background-color: rgb(80, 75, 75);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .div0{
+        margin-left: 3%;
+        margin-top: 0.5vh;
+        border-bottom: 3px solid black;
+        height: 6vh;
+    }
+    .text0{
+        font-size: 5vh;
+    }
+    .container2{
+        flex-flow: row wrap;
+        flex-direction: column;
+        height:70vh;
+        background-color: gray;
+        border-radius: 10px;
+        margin-top:  1.5vh;  
+    }
+    .div1{
+        align-items: center;
+        margin-top: 4vh;
+        margin-bottom: 12vh;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text1, .text2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 48%;
+    }
+    
+    .text1{
+        border-bottom: 4px solid black;
+        font-size:5.5vw;
+        padding-bottom: 0.5vh;
+    }
+    .text2{
+        font-size:3vw;
+    }
+    .div2{
+        margin-left: 26%;
+        background-color:rgba(40, 40, 247, 0.5);
+        height: 12vh;
+        border-radius: 10%;
+        display: table;
+        width: 20%;
+    }
+    .text3{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 2.5vw;
+        color: white;
+        text-align: center;  
+    }
+    .container3{
+        display: table;
+        width: 100%;
+        margin-top: 5vh;
+        height:13vh;
+        background-color: black;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .text4{
+        display: table-cell;
+        vertical-align: middle;   
+        margin: 2vh 0 0 4%;
+        color: white;
+        font-size: 1.5rem;
+    }
+    

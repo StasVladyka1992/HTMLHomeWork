@@ -1,18 +1,16 @@
-
-// Only 2 fields are checking: email and name. 
-// Я могу сделать проверку с помощью регулярных выражений, 
-// изменив тип поля с "email" на "text", но не вижу в этом смысла, 
-// т.к. html имеет функцию автоматической проверки правильности 
-// введенной почты
-setInterval(function submitButton(){
-    var form = document.getElementById("form");
+function checkName() {
+ var name  = document.getElementsByName("name")[0];
+ var email = document.getElementsByName("email")[0];
+ /*флаг i позволяет искать независимо от регистра
+ судя по всему, эта регулярка не совсем полная*/  
+ if (name.value!="" && (/^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i).test(email.value)){
+     var subButton = document.getElementById("submitButton");
+     subButton.removeAttribute("disabled");
+     subButton.style.color="green";
+ } 
+ else {
     var subButton = document.getElementById("submitButton");
-    if (form.name.value == "" || form.email.value==""){
-        subButton.disabled = true;
-        subButton.style.cssText = "background-color: red;";
-    }
-    else {
-        subButton.disabled=false; 
-        subButton.style.cssText = "background-color: green;";
-    }
-}, 10);
+    subButton.setAttribute('disabled', 'disabled');
+    subButton.style.color="red";
+ } 
+}

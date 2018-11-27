@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,18 @@
     <script src="js2.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <div class="container0">
-        <button onclick='toggle()' id="b1">Нажми меня</button>
-    </div>
-    <div class="container1" id="cont1">
+    <div id="parent">
+        <button onclick="showMenu()" class="b1"><img src="images/right.png" alt=""></button>
+        <div class="container1">
             <button class="b2">Открыть окно</button>
             <button class="b2">Закрыть окно</button>
             <button class="b2">Включить батарею</button>
             <button class="b2">Закутаться одеялом</button>
-            <button class="b2">Устроить пекло</button>  
-    </div>    
+            <button class="b2">Устроить пекло</button>
+        </div>
+    </div>
 </body>
+
 </html>
