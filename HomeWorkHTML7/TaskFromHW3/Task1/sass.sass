@@ -1,0 +1,153 @@
+$headerColor: rgb(80, 75, 75)
+$button: rgba(40, 40, 247, 0.5) 
+$buttonText: rgb(240, 224, 224) 
+$radius: 10px
+=displayTable()
+    display: table-cell 
+    vertical-align: middle 
+
+=borderBottomRad($radius)
+    border-bottom-left-radius: $radius
+    border-bottom-right-radius: $radius
+
+=borderTopRad($radius)
+    border-top-left-radius: $radius
+    border-top-right-radius: $radius      
+
+@media screen and (max-width: 768px)    
+    html, body
+        margin: 0
+        padding: 0
+    p
+        margin: 0
+        font-size: 12px
+    .container1, .container2
+        display: flex
+    .container1 
+        height:7vh 
+        background-color: $headerColor 
+        +borderBottomRad(10px)
+    .div0 
+        margin-left: 3% 
+        margin-top: 1vh 
+        border-bottom: 3px solid black 
+        height: 4vh 
+    .text0 
+        font-size: 3vw 
+    .container2 
+        flex-flow: row wrap 
+        flex-direction: column 
+        width: 90% 
+        height:40vh 
+        background-color: gray 
+        border-radius: 10px 
+        margin: 1.5vh auto 0 auto 
+    .div1 
+        height: 10vh 
+        margin-top: 4vh 
+        width: 90%  
+    .text1 
+        height: 6.3vh 
+        border-bottom: 2px solid black 
+        font-size: 4vw 
+        font-weight: bold 
+        width: 48% 
+        margin-left: 10%  
+    .text2 
+        font-size:2.5vw 
+        width: 48% 
+        margin-left: 10%
+    .div2 
+        width: 30% 
+        background-color:$button
+        height: 5vh 
+        border-radius: 10% 
+        margin-left: 9% 
+        margin-top: 7vh 
+        display: table  
+    .text3 
+        font-size: 3vw 
+        color: $buttonText
+        text-align: center 
+        +displayTable()
+    .container3 
+        margin-top: 45vh 
+        height:6vh 
+        background-color: black 
+        +borderTopRad($radius)
+        display: table 
+        width: 100% 
+    .text4    
+        +displayTable()
+        color: white 
+        font-size: 1.5rem 
+        padding-left: 3% 
+
+@media screen and (min-width:769px)
+    html, body
+        margin: 0
+        padding: 0
+    p
+        margin: 0
+        font-size: 12px
+    .container1, .container2  
+        display: flex    
+    .container1 
+        height:10vh
+        background-color: $headerColor
+        +borderBottomRad($radius)
+    .div0 
+        margin-left: 3%
+        margin-top: 0.5vh
+        border-bottom: 3px solid black
+        height: 6vh     
+    .text0 
+        font-size: 5vh     
+    .container2 
+        flex-flow: row wrap
+        flex-direction: column
+        height:70vh
+        background-color: gray
+        border-radius: 10px
+        margin-top:  1.5vh       
+    .div1 
+        align-items: center
+        margin-top: 4vh
+        margin-bottom: 12vh
+        width: 100%
+        margin-left: auto
+        margin-right: auto     
+    .text1, .text2 
+        margin-left: auto
+        margin-right: auto
+        width: 48%     
+    .text1 
+        border-bottom: 4px solid black
+        font-size:5.5vw
+        padding-bottom: 0.5vh    
+    .text2 
+        font-size:3vw    
+    .div2 
+        margin-left: 26%
+        background-color:$button
+        height: 12vh
+        border-radius: 10%
+        display: table
+        width: 20%     
+    .text3 
+        +displayTable()
+        font-size: 2.5vw
+        color: white
+        text-align: center       
+    .container3 
+        display: table
+        width: 100%
+        margin-top: 5vh
+        height:13vh
+        background-color: black
+        +borderTopRad($radius) 
+    .text4 
+        +displayTable() 
+        margin: 2vh 0 0 4%
+        color: white
+        font-size: 1.5rem  
