@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand col-2 col-md-1" href="#"><img src="images/logo.png" alt="logo" style="width:60px;"></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-11 justify-content-between" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="ml-2 mr-2" href="#">Home</a></li>
+                <li><a class="ml-2 mr-2" href="#">Goods</a></li>
+                <li><a class="ml-2 mr-2" href="#">Contacts</a></li>
+                <li><a class="ml-2 mr-2" href="#">About us</a></li>
+            </ul>
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-sm col-8" placeholder="Search">
+                    <input class="form-control form-control-sm btn-primary col-4" type="submit" value="Search">
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid rounded mt-4 col-10" id="two-col-text">
+        <div class="col ">
+            <h3>Honey is...</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>A thick, golden liquid produced by industrious bees. But
+                    how do bees make honey?
+                    Nectar — a sugary liquid — is extracted from flowers using a bee's long, tube-shaped tongue
+                    and stored in its extra stomach, or "crop." While sloshing around in the crop, the nectar
+                    mixes with enzymes that transform its chemical composition
+                    When a honeybee returns to the hive, it passes the nectar to another bee by regurgitating
+                    the liquid into the other bee's mouth. This process is repeated until the
+                    partially digested nectar is finally deposited into a honeycomb.
+                </p>
+            </div>
+            <div class="col">
+                <p>Once in the comb, nectar is still a viscous liquid — nothing like the honey we eat.
+                    To get all that extra water out of their honey, bees set to work
+                    fanning the honeycomb with their wings in an effort to speed up the process of evaporation.
+                    When most of the water has evaporated from the honeycomb, the bee seals the comb with a
+                    secretion of liquid from its abdomen, which eventually hardens into beeswax. Away from air
+                    and water, honey can be stored indefinitely, providing bees with the perfect food source
+                    for cold winter months.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <!--методы для организации коллекции карточек пока еще не адаптивные (из документации)-->
+        <div class="card-group">
+            <div class="col-sm-12 mb-4 col-md-4">
+                <div class="card text-center">
+                    <img class="card-img-top mt-2 img-fluid" src="images/cards/grain.jpg" alt="Гречишный мёд">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Гречишный мёд</h4>
+                        <p class="card-text">Гречишный мёд – один из высококачественных сортов меда. По сравнению с
+                            другими
+                            сортами в нём больше белковых веществ и микроэлементов.</p>
+                        <a href="#" class="btn btn-primary text-center form-control"><span>Больше информации</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 mb-4 col-md-4">
+                <div class="card  text-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Майский мёд</h4>
+                        <p class="card-text">Майский мёд – мёд, который собирается ранней весной с таких растений,
+                            как липа, одуванчик, вишня и др. Имеет белый или светло-желтый цвет</p>
+                        <a href="#" class="btn btn-primary text-center form-control"><span>Больше информации</span></a>
+                    </div>
+                    <img class="card-img-bottom mb-2 img-fluid" src="images/cards/maiskiy.jpg" alt="Майский мёд">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4 text-center">
+                <div class="card h-100">
+                    <img class="card-img img-fluid h-100" src="images/cards/raps.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Рапсовый мёд</h4>
+                        <p class="card-text">Рапсовый мёд обладает светло-желтым или белым цветом. Довольно быстро,
+                            иногда еще в ячейках сот кристаллизуется крупными зёрнами.
+                            Этот мёд служит хорошим у крепляющим и успокаивающим средством, повышает иммунитет,
+                            стойкость к токсинам</p>
+                        <a href="#" class="btn btn-primary text-center form-control"><span>Больше информации</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo" class="carousel slide mt-5" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <img src="images/carous-img/3.jpg " alt="комплимент" width="400" height="400">
+                <div class="carousel-caption">
+                    <h3>Корпоративные наборы</h3>
+                    <p>У нас есть идеи, как поздравить коллег</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <img src="images/carous-img/2.jpg" alt="Chicago" width="400" height="400">
+                <div class="carousel-caption">
+                    <h3>Сладкие комплименты</h3>
+                    <p>Сделайте комплимент особенным</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <img src="images/carous-img/1.jpg" alt="New York" width="400" height="400">
+                <div class="carousel-caption">
+                    <h3>Подарки к праздникам</h3>
+                    <p>Чей-то день будет слаще</p>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="container-fluid col-sm-10 mt-5" id="two-col-text">
+        <p>
+            <img src="images/altaj.jpg" class="float-left img-fluid rounded-circle img-thumbnail mr-2" style="width: 400px; height: 250px;"
+                alt="">
+
+            Алтайский край — это регион контрастов. На его территории есть бескрайние поля и горнолыжные спуски, озёра
+            с солёной водой и полноводные реки. Одна из них, Обь, берёт своё начало на Алтае, течёт через всю Сибирь и
+            впадает в Карское море.
+            Здесь летом бывает +40°C, в октябре выпадает первый снег, а зима длится полгода — пока в апреле не растают
+            последние сугробы. Такие суровые зимы не мешают фермерам собирать рекордные урожаи — это делает Алтайский
+            край крупным аграрным регионом России.
+            Алтай славится целебным воздухом, источниками минеральной воды, мараловыми ваннами и продуктами
+            пчеловодства. Алтайский мёд считается одним из самых полезных, потому что в его состав входят нектары
+            эндемиков — растений, которые можно встретить только в этом регионе.
+            Алтайский мёд — это разнообразие сортов: гречишный, дягилевый, дудниковый, донниковый, кипрейный,
+            подсолнечниковый, синяковый, соссюрейный, падевый и многие другие. Каждый из них обладает неповторимым
+            цветочный ароматом и вкусом знойного лета.
+            Именно на Алтае делают популярный сорт мёда «Алтайское разнотравье». Для нас его собирает семья Шроо на
+            собственной пасеке в селе Топольное. Там шумит речка Ануй, горы сменяют равнину, а до ближайшего города
+            нужно целый час добираться по грунтовой дороге.
+            Сезон у алтайских пчеловодов открывается ранней весной — с откачки ивового мёда. В мае собирают цветочный
+            мёд, в июне — эспарцетовый, а в июле-августе — гречишный.
+            Мёд с Алтая получается очень полезным и питательным. Так, «Алтайское разнотравье» укрепляет иммунитет,
+            улучшает пищеварение, стимулирует умственную деятельность и нормализует сон.
+        </p>
+
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Узнать больше</button>
+        <div id="demo2" class="collapse">
+            Больше информации о нашей пасеке вы можете найти на <a href="https://www.youtube.com/channel/UCys4Di-HME_RANf9ITBy3qQ">Youtube-канале</a>
+        </div>
+    </div>
+    <div class="container-fluid col-sm-10 mt-5" id="two-col-text">
+        <h4>Leave a comment</h3>
+            <form action="" method="get">
+                <div class="row col-sm-6">
+                    <div class="form-group">
+                        <label for="name"></label>
+                        Name:
+                        <input type="text" class="form-control" size="30" maxlength="60">
+                        </label>
+
+                    </div>
+                </div>
+                <div class="row col-sm-6">
+                    <div class="form-group">
+                        <label for="email">
+                            Email:
+                            <br>
+                            <input type="email" class="form-control" size="30" maxlength="60">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row col-sm-10">
+                    <div class="form-group ">
+                        <label for="comments">
+                            Comments: </label>
+                        <br>
+                        <textarea rows="3" cols="33" class="form-control" placeholder="Leave a comment" id="comments"></textarea>
+                        <br>
+                    </div>
+                </div>
+                <div class="row col-sm-4">
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn-primary" value="Send review">
+                    </div>
+                </div>
+            </form>
+    </div>
+
+
+    <div class="container-fluid bg-dark mt-5">
+        <div class="row">
+            <div class="col-7">
+                <h5 class="text-white">Контактная информация:</h5>
+                <p class="text-white">
+                    Республика Беларусь, г. Минск, 220056
+                    ул. 50 лет Победы 19
+                    <br>
+                    stavladyk@gmail.com
+                </p>
+            </div>
+            <div class="col-5">
+                <p class="text-right mb-2">Мы в социальных сетях:</p>
+                <ul class="menu text-right">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-white ">&copy Stas Vladyka, All rights reserved. 2018</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
